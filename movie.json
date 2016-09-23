@@ -1,0 +1,28 @@
+[{
+  "id":1,
+  "movieImgSrc":"images/1.jpg",
+  "movieTitle":"电影1",
+  "movieInfo":"电影1介绍xxxxxx",
+  "movieTime":"2016-03-01"
+},
+  {
+    "id":2,
+    "movieImgSrc":"images/2.jpg",
+    "movieTitle":"电影2",
+    "movieInfo":"电影2介绍xxxxxx",
+    "movieTime":"2016-03-02"
+  },
+  {
+    "id":3,
+    "movieImgSrc":"images/3.jpg",
+    "movieTitle":"电影3",
+    "movieInfo":"电影3介绍xxxxxx",
+    "movieTime":"1886-03-03"
+  },
+  {
+    "id":4,
+    "movieImgSrc":"images/4.jpg",
+    "movieTitle":"电影4",
+    "movieInfo":"电影4介绍xxxxxx",
+    "movieTime":"2026-03-04"
+  }]

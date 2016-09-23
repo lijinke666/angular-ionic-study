@@ -1,0 +1,35 @@
+<ion-view title="{{loginTitle}}">
+    <ion-content>
+        <form action="#/tab/home" name="loginForm"  ng-submit="loginForm()">
+            <ion-list>
+                <ion-item>
+                    <label class="item item-input">
+                        <input type="text" name="username" ng-class="{'error':loginForm.username.$invalid && loginForm.username.$touched}"  ng-model="username" placeholder="用户名" ng-minlength="2" ng-maxlength="6" required>
+                        <span ng-if="(loginForm.username.$error.minlength || loginForm.username.$error.maxlength) && loginForm.username.$touched">用户名2位-6位</span>
+                        <span ng-show="loginForm.username.$error.required && loginForm.username.$touched">请输入用户名</span>
+                    </label>
+                </ion-item>
+                <ion-item>
+                    <label class="item item-input">
+                        <input type="password" name="password" ng-model="password" placeholder="密码" ng-minlength="6" ng-maxlength="8" required>
+                        <span ng-if="(loginForm.password.$error.minlength || loginForm.password.$error.maxlength) && loginForm.password.$touched">密码6位-8位</span>
+                        <span ng-show="loginForm.password.$error.required && loginForm.password.$touched">请输入密码</span>
+                    </label>
+                </ion-item>
+                <ion-item class="item-toggle">
+                    <label class="toggle toggle-balanced">
+                        <input type="checkbox" checked>
+                        <div class="track">
+                            <div class="handle"></div>
+                        </div>
+                    </label>
+                    记住密码
+                </ion-item>
+                <ion-item>
+                    <button type="submit" class="button button-block button-balanced">登录</button>
+                </ion-item>
+            </ion-list>
+        </form>
+    </ion-content>
+</ion-view>
+

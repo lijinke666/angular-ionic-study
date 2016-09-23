@@ -1,0 +1,18 @@
+<ion-view view-title="{{musicTitle}}">
+    <ion-content>
+        <!--音乐部分-->
+        <ion-list>
+            <ion-item class="item-divider-ios item-icon-left">
+                <i class="icon ion-music-note"></i>
+                <h2>最火{{musicTitle}}</h2>
+                <span class="badge badge-assertive">{{musicData.length}}</span>
+            </ion-item>
+            <ion-item class="item-avatar item-icon-right" ng-repeat="i in musicData" ng-click="toMusicDetail({{i.id}})">
+                <img ng-src="{{i.musicImgSrc}}" alt="{{i.musicTitle}}">
+                <h2>{{i.musicTitle}}</h2>
+                <p>{{i.musicInfo}}</p>
+                <i class="icon ion-ios-arrow-right"></i>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

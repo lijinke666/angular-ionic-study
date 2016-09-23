@@ -1,0 +1,22 @@
+<ion-view view-title="{{movieTitle}}">
+    <!--电影部分-->
+    <ion-pane>
+        <ion-content>
+            <!--下拉刷新-->
+            <ion-refresher pulling-text="下拉刷新" on-refresh="loadMovieData()"></ion-refresher>
+            <ion-list>
+                <ion-item class="item-divider-ios item-icon-left">
+                    <i class="icon ion-videocamera"></i>
+                    <h2>最火{{movieTitle}}</h2>
+                    <span class="badge badge-assertive">{{movieData.length}}</span>
+                </ion-item>
+                <ion-item class="item-thumbnail-left item-icon-right" ng-repeat="i in movieData" ng-click="toMovieDetail({{i.id}})">
+                        <img ng-src="{{i.movieImgSrc}}" alt="{{i.movieTitle}}">
+                        <h2>{{i.movieTitle}}</h2>
+                        <p>{{i.movieInfo}}</p>
+                        <i class="icon ion-ios-arrow-right"></i>
+                </ion-item>
+            </ion-list>
+        </ion-content>
+    </ion-pane>
+</ion-view>

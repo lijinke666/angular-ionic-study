@@ -1,0 +1,19 @@
+<ion-view>
+    <ion-content>
+        <ion-list class="card">
+            <ion-item class="item-avatar">
+                <img src="{{movieDetailData.movieImgSrc}}">
+                <h2>{{movieDetailData.movieTitle}}</h2>
+                <p>{{movieDetailData.movieTime}}</p>
+            </ion-item>
+            <ion-item class="item-body">
+                <img class="full-image" src="{{movieDetailData.movieImgSrc}}">
+                <p>
+                    {{movieDetailData.movieInfo}}
+                </p>
+                <p>
+                    <a href="#/tab/movie" class="button  ion-ios-arrow-left">返回</a>
+                </p>
+        </ion-list>
+    </ion-content>
+</ion-view>

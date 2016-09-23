@@ -1,0 +1,27 @@
+<!-- tabs-standard非条带风格   tabs-striped条带风格 -->
+<ion-tabs class="tabs-striped tabs-icon-top">
+    <!-- title就是选项卡的名字  如果后面有图标就会被覆盖掉 -->
+    <ion-tab title="首页" icon-on="ion-home" icon-off="ion-home" href="#/tab/home">
+        <ion-nav-view name="tab-home">
+
+        </ion-nav-view>
+    </ion-tab>
+    <ion-tab title="电影" icon-on="ion-videocamera"   icon-off="ion-videocamera" href="#/tab/movie">
+        <!--这里的name  对应 路由配置中的views-->
+        <ion-nav-view name="tab-movie" >
+
+        </ion-nav-view>
+    </ion-tab>
+
+    <ion-tab title="音乐" icon-on="ion-music-note" icon-off="ion-music-note" href="#/tab/music">
+        <ion-nav-view name="tab-music">
+
+        </ion-nav-view>
+    </ion-tab>
+
+    <ion-tab title="关于" icon-on="ion-ios-copy" icon-off="ion-ios-copy-outline" href="#/tab/about">
+        <ion-nav-view name="tab-about">
+
+        </ion-nav-view>
+    </ion-tab>
+</ion-tabs>
